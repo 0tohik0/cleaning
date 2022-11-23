@@ -24,6 +24,27 @@ a {
     justify-content: space-between;
     text-align: center;
 }
+.title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 122.02%;
+}
+.desc {
+    line-height: 24px;
+}
+.inscript {
+    position: relative;
+    line-height: 19px;
+    margin-bottom: 24px;
+    padding-left: 43px;
+}
+.inscript::before {
+    content: '';
+    position: relative;
+    width: 30px;
+    height: 1px;
+    background-color: #4A72FF;
+}
 
 /* info */
 .info {
@@ -80,4 +101,9 @@ a {
 }
 .header-call__item {
     font-weight: 600;
+}
+
+/* promo */
+.promo-block {
+    margin-top: 91px;
 }
