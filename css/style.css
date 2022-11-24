@@ -22,7 +22,7 @@ a {
 .block {
     display: flex;
     justify-content: space-between;
-    text-align: center;
+
 }
 .title {
     font-weight: 600;
@@ -32,18 +32,31 @@ a {
 .desc {
     line-height: 24px;
 }
-.inscript {
+.up {
     position: relative;
-    line-height: 19px;
-    margin-bottom: 24px;
     padding-left: 43px;
+    margin-bottom: 24px;
 }
-.inscript::before {
+.up::before {
     content: '';
-    position: relative;
+    position: absolute;
     width: 30px;
-    height: 1px;
+    height: 2px;
     background-color: #4A72FF;
+    border-radius: 20px;
+    margin-top: 8px;
+    margin-left: -42px;
+}
+.button {
+    align-items: center;
+    background: #4A72FF;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    line-height: 122.02%;
+    border-radius: 10px;
+    padding: 12px 24px;
+    cursor: pointer;
 }
 
 /* info */
@@ -104,6 +117,70 @@ a {
 }
 
 /* promo */
+.promo-container {
+    display: flex;
+}
 .promo-block {
+    display: flex;
     margin-top: 91px;
+    width: 567px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.promo-block__title {
+    margin-bottom: 32px;
+}
+.promo-block__desc {
+    width: 505px;
+    margin-bottom: 32px;
+}
+.promo-block__text {
+    position: absolute;
+    background: url('../img/Ellipse.svg') no-repeat center;
+    width: 189px;
+    height: 68px;
+    margin-left: 13px;
+}
+.promo-img {
+    display: flex;
+    width: 620px;
+    justify-content: flex-end;
+    margin-top: 50px;
+} 
+.promo-img__img1 {
+    position: relative;
+    background-image: url('../img/Rectangle\ 2.png');
+    border-radius: 10px;
+    width: 475px;
+    height: 432px;
+    margin-right: 51px;
+    z-index: 2;
+}
+.promo-img__img1::before {
+    content: '';
+    position: absolute;
+    width: 168.91px;
+    height: 169px;
+    background: url('../img/Linked\ Path\ Group.png') no-repeat center;
+    bottom: 0;
+    margin-bottom: -70px;
+    margin-left: -100px;
+}
+.promo-img__img1::after {
+    content: '';
+    position: absolute;
+    background: url('../img/Group\ 62.png') no-repeat center;
+    width: 626px;
+    height: 531px;
+    margin-top: -30px;
+    margin-left: -100px;
+}
+.promo-img__img3 {
+    position: absolute;
+    margin-top: -30px;
+    background: #4A72FF;
+    border-radius: 10px;
+    width: 278px;
+    height: 265px;
+    z-index: 1;
 }
