@@ -232,9 +232,22 @@ a {
     font-size: 24px;
 }
 .card-desc {
-    padding-left: 73px;
+    position: relative;
+    padding-left: 80px;
     padding-bottom: 10px;
+}
+.card-desc::after {
+    content: '';
+    position: absolute;
+    width: 5.5px;
+    height: 11px;
+    background: url('../img/vec.png') no-repeat center;
+    top: 7px;
+    padding-left: 17px;
 }
 .card2 {
     margin-top: 170px;
+}
+.card-text2 {
+    height: 360px;
 }
