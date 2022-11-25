@@ -198,27 +198,43 @@ a {
 /* services */
 .services-box {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .card {
-    margin-top: 182px;
+    position: relative;
+}
+.card-img {
+    position: relative;
+    padding-top: 48px;
+    padding-left: 78px;
+    z-index: 2;
+}
+.card-text {
+    position: absolute;
+    width: 424px;
+    height: 330px;
     background: #FFFFFF;
     box-shadow: 2px 4px 11px 3px rgba(136, 136, 156, 0.25);
     border-radius: 10px;
-    width: 400px;
-    height: 319px;
-}
-.card-img {
-    padding-bottom: -60px;
-    padding-left: 62px;
+    margin-top: -148px;
+    z-index: 1;
 }
 .card-title {
-    display: flex;
-    justify-content: center;
+    padding-top: 163px;
     padding-bottom: 24px;
+    text-align: center;
     font-size: 24px;
 }
 .card-desc {
-    padding-left: 58px;
-    padding-bottom: 12px;
+    padding-left: 73px;
+    padding-bottom: 10px;
+}
+.card2 {
+    margin-top: 170px;
 }
